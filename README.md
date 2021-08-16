@@ -17,7 +17,7 @@
 
 Proceed with next steps if your platform meet following recommended prerequisite.
 
-- Install [Node.js](https://nodejs.org/en/) (14 LTS) on your device.
+- Install [Node.js](https://nodejs.org/en/) on your device.
 
 ## :sparkles: Getting Started
 Run the following command under `eyepex-frontend` directory to install dependencies.
