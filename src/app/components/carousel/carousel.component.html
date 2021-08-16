@@ -1,1 +1,23 @@
-<p>carousel works!</p>
+<div class="slideshow-container">
+  <ng-container *ngFor="let slide of slidesList; let i = index">
+    <div class="mySlides fade" [class.d-block]="currentIndex === i">
+      <img [src]="slide?.image" class="carousel" style="width: 100%"/>
+      <h3 class="text-main">{{ slide.title }}</h3>
+      <div class="text">{{ slide.subTitle }}</div>
+    </div>
+
+    <a *ngIf="slidesList.length != 1"
+       (click)="plusSlides(-1)"
+       [class.prev]="slidesList.length > 1">&#10094;</a>
+    <a *ngIf="slidesList.length != 1"
+       (click)="plusSlides(1)"
+       [class.next]="slidesList.length > 1">&#10095;</a>
+  </ng-container>
+</div>
+<br/>
+
+<div style="text-align: center">
+  <span class="dot" *ngFor="let slide of slidesList; let i = index"
+        [class.active]="currentIndex === i">
+  </span>
+</div>
