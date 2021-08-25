@@ -1,8 +1,0 @@
-Frontend
-
-01. Install Dependencies: npm i
-02. Run the Project: npm start
-
-(Make sure one or more records available on the mongo database, If not please add using the backend API)
-
-PORT: 4200
