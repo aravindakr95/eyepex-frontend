@@ -20,17 +20,24 @@ Proceed with next steps if your platform meet following recommended prerequisite
 - Install [Node.js](https://nodejs.org/en/) on your device.
 
 ## :sparkles: Getting Started
-Run the following command under `eyepex-frontend` directory to install dependencies.
+Run the following command under `eyepex-frontend` directory to install dependencies and run the project.
  ```
- npm install
+ npm install && npm start
  ```
 
 ## :sparkles: How to Use
+
+Make sure one or more slides data available on database or add using, I have not used static data binding instead of that I have used the REST APIs.
+ ```
+POST /v1/api/carousel/add
+BODY: { "image": "some_image_url", "title": "some_image_title", "subTitle": "some_image_title" }
+ ```
 
 Here is the list of tasks available out of the box and run these via `npm run <task>`.
  ```
    clean             Clean distribution folder
    build             Perform webpack build and generates bundle
+   start             Start the app
    watch             Run development application on watch mode
  ```
 
